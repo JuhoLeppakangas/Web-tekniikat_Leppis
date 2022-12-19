@@ -1,0 +1,11 @@
+body{
+    font-size: 18px;
+
+}
+#koko{
+    border: solid 2px rgb(92, 92, 92);
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(212, 212, 212);
+
+}
