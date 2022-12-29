@@ -1,0 +1,47 @@
+//luodaan teema-mixin
+@mixin theme($color: red){
+    color: $color;
+    border: solid 2px $color;
+    padding: 5px;
+    margin: 5px;
+    .highlight{
+        //jos teeman väri on sininen
+        @if $color == red{
+                        // korostetaan keltaisella
+                        color: yellow;
+        //jos teeman väri on pinkki
+        //korostetaan mustalla
+        }
+        @else if $color == pink {
+            color: black;
+        }
+        @else {
+            // muuten korostetaan punaisella
+            color: red;
+
+        }
+
+        color: rgb(240, 144, 1);
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+}
+
+//dollarimerkillä luodaan muuttuja
+$hieno: rgb(98, 0, 255);
+h1{
+    //color: $hieno;
+    @include theme;
+}
+.bordered{
+    @include theme($color: $hieno);
+    //border: solid 2px $hieno;
+    //padding: 5px;
+    //margin: 5px;
+}
+.green{
+    @include theme($color: purple);
+}
+div:hover{
+    background-color: aqua;
+}

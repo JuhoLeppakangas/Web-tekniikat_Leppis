@@ -1,0 +1,47 @@
+h1 {
+  color: red;
+  border: solid 2px red;
+  padding: 5px;
+  margin: 5px;
+}
+h1 .highlight {
+  color: yellow;
+  color: rgb(240, 144, 1);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.bordered {
+  color: rgb(98, 0, 255);
+  border: solid 2px rgb(98, 0, 255);
+  padding: 20px;
+  margin: 50px;
+}
+.bordered .highlight {
+  color: red;
+  color: rgb(240, 144, 1);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.green {
+  color: purple;
+  border: solid 2px purple;
+  padding: 5px;
+  margin: 5px;
+}
+.green .highlight {
+  color: red;
+  color: rgb(240, 144, 1);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+/* Tässä käytetty hover pseudo-elementtiä*/
+div:hover{
+  background-color: aqua;
+}
+/* tässä käytetty selectoria*/
+body>h1{
+  background-color: chartreuse;
+}
+/*# sourceMappingURL=styles.css.map */
